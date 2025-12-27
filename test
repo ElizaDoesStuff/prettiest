@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+test_queue=
+
+while [ ! $1 = "" ]; do
+	test_queue+=$1
+	shift
+done
+
+bash build
+
+for test in $test_queue; do
+	./Build/Tests/$test.test
+done

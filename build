@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ ! -d Build ]; then 
+	mkdir Build
+	cmake -B Build -S . -G Ninja
+fi;
+
+cmake --build Build
