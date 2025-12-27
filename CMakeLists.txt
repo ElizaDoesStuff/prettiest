@@ -1,10 +1,5 @@
 cmake_minimum_required( VERSION 3.30 )
-project( Prettiest )
+project( Prettiest.top )
 
-add_library( ${PROJECT_NAME} INTERFACE )
-
-target_include_directories(
-	${PROJECT_NAME}
-	INTERFACE
-	${PROJECT_SOURCE_DIR}/Include
-)
+add_subdirectory( Library )
+add_subdirectory( Tests )
