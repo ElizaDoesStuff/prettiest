@@ -1,4 +1,4 @@
-#include <Prettiest/Prettiest.h>
+#include <prettiest/prettiest.h>
  
 #define TEST "test~All"
 

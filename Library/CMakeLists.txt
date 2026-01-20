@@ -1,5 +1,5 @@
 cmake_minimum_required( VERSION 3.30 )
-project( Prettiest.library )
+project( prettiest )
 
 add_library( ${PROJECT_NAME} INTERFACE )
 
