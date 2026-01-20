@@ -12,7 +12,7 @@ if ( ${PRETTIEST_TEST_COUNT} GREATER 0 )
 
 	foreach( TEST ${PRETTIEST_TESTS} )
 		add_executable( ${TEST}.test test~${TEST}.cpp )
-		target_link_libraries( ${TEST}.test Prettiest.library )
+		target_link_libraries( ${TEST}.test prettiest )
 	endforeach()
 
 endif()
